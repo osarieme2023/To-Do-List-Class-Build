@@ -12,6 +12,7 @@ body {
     color: white;
     background-image: url('../images/whitegirl_in_blackspace.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 main {
@@ -81,11 +82,15 @@ ul li {
 }
 
 input[type="checkbox"]:checked + span::after {
-    appearance: none;
-    width: 32px;
-    height: 32px;
-    border-radius: 8px;
-    padding: 8px;
+    content: '\2713';  
+    margin-left: 50px; 
+    display: inline-flex;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
     background-color: rgb(109, 164, 206);
-    border: 5px solid rgb(7, 3, 61);
+    border: 3px solid rgb(7, 3, 61);
 }
